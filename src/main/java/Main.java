@@ -1,5 +1,13 @@
 package main.java;
 
+import main.java.Singleton.SingletonMain;
+
+/**
+ * This is the main application of the Design Patterns Assignment.
+ * @author Dakota
+ * @version 1.0
+ */
+
 public class Main {
 
     /**
@@ -8,6 +16,6 @@ public class Main {
      */
     
     public static void main(String[] args) {
-        
+        SingletonMain.main(args);
     }
 }
