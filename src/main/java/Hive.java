@@ -28,19 +28,23 @@ public class Hive {
         species = null;
     }
     
-    public void addBee(int amount, Hive species) throws UnsupportedOperationException {
+    public Hive(Species species) {
+        this.species = species;
+    }
+
+    public void AddBees(int amount, Hive species) throws UnsupportedOperationException {
         Hive temp;
         Species speciesType = species.getSpecies();
         
     }
     
-    public void addRoom(int amount, int ticks) {
+    public void AddRooms(int amount, int ticks) {
         for (int i = 0; i < amount; i++) {
             room.add(new Room(ticks));
         }
     }
     
-    public void addQueen(Hive queen) {
+    public void AddQueen(Hive queen) {
         this.queen = queen;
     }
     

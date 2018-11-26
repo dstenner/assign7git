@@ -1,6 +1,7 @@
 package main.java;
 
 import main.java.Singleton.SingletonMain;
+import main.java.Builder.BuilderMain;
 
 /**
  * This is the main application of the Design Patterns Assignment.
@@ -17,5 +18,6 @@ public class Main {
     
     public static void main(String[] args) {
         SingletonMain.main(args);
+        BuilderMain.main(args);
     }
 }
