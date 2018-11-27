@@ -13,10 +13,10 @@ import main.java.Hive;
 public class Apiary {
 
     private static Apiary _instance;
-    private ArrayList<Hive> hives;
+    private int hives;
     
     private Apiary() {
-        hives = new ArrayList<Hive>();
+        hives = 0;
     }
     
     public static Apiary getApiary() {
@@ -26,11 +26,11 @@ public class Apiary {
         return _instance;
     }
     
-    public void createHive(Hive add) {
-        hives.add(add);
+    public void createHive(int amount) {
+        hives += hives + amount;
     }
     
-    public ArrayList<Hive> getHives() {
+    public int getHives() {
         return hives;
     }
 }

@@ -13,9 +13,15 @@ public class SingletonMain {
     public static void main(String[] args) {
         Apiary apiary = Apiary.getApiary();
         
-        apiary.createHive(new Hive());
+        apiary.createHive(5);
         
-        System.out.println("In this apiary, there are hives located at " 
-                + apiary.getHives());
+        System.out.println("Singleton Main");
+        System.out.println("///////////////////////////////////////////////////");
+        System.out.println("");
+        System.out.println("In this apiary, there are " 
+                + apiary.getHives() + " hives.");
+        
+        System.out.println("////////////////////////////////");
+        System.out.println("");
     }
 }

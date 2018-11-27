@@ -15,7 +15,7 @@ public class DiggerHiveBuilder extends HiveBuilder {
     
     @Override
     public void AddRooms() {
-        _hive.AddRooms(5, 10);
+        _hive.AddRooms(5);
     }
     
     @Override

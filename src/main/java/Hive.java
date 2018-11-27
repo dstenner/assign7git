@@ -14,8 +14,8 @@ import java.util.ArrayList;
  */
 public class Hive {
 
-    private ArrayList<Hive> hive;
-    private ArrayList<Room> room;
+    private int hive;
+    private int room;
     private Species species;
     private Hive queen;  
 
@@ -23,8 +23,8 @@ public class Hive {
      * Create a new Hive object
      */
     public Hive() {
-        hive = new ArrayList<Hive>();
-        room = new ArrayList<Room>();
+        hive = 0;
+        room = 0;
         species = null;
     }
     
@@ -38,33 +38,23 @@ public class Hive {
         
     }
     
-    public void AddRooms(int amount, int ticks) {
-        for (int i = 0; i < amount; i++) {
-            room.add(new Room(ticks));
+    public void AddRooms(int amount) {
+        room += room + amount;           
         }
-    }
     
     public void AddQueen(Hive queen) {
         this.queen = queen;
     }
     
-    public ArrayList<Hive> getHive() {
+    public int getHive() {
         return hive;
     }
     
-    public ArrayList<Room> getRoom() {
+    public int getRoom() {
         return room;
     }
     
     public Species getSpecies() {
         return species;
-    }
-
-    private class Room {
-        private int buildTime;
-    
-        private Room(int ticks) {
-            buildTime = ticks;
-        }
     }
 }
